@@ -1,1 +1,1 @@
-# ecommerce-plugin
+# Ecommerce
