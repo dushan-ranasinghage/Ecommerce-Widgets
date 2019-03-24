@@ -2,11 +2,7 @@ import React, { Component } from 'react';
 import Layout from './containers/Layout';
 import TestCompo from './components/TestCompo';
 
-interface Props {
-  user ?: string;
-}
-
-class App extends Component<Props> {
+class App extends Component<any, any> {
     render() {
         return (
             <React.Fragment>
