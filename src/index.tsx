@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './containers/App';
-import TestCompo from './components/TestCompo';
+import App from './App'
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-<React.Fragment>
-<App user="Dushan"/>
-<TestCompo name="Randika"/>
-</React.Fragment>
+        <App />
 , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
