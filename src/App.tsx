@@ -21,11 +21,11 @@ class App extends Component<any, any> {
             <React.Fragment>
                 {/* <Layout />
                 <TestCompo name="Randika" /> */}
-                <Menu fixed='top' inverted style={{ backgroundColor: '#000' }}>
+                <Menu fixed='top' inverted style={{ backgroundColor: '#000', height:'45px', minHeight:'45px' }}>
                     <Container>
                         <Menu.Item as='a' header>
                             <Image size='mini' src={img} style={{ marginRight: '1.5em' }} />
-                            Project Name
+                            Home
                         </Menu.Item>
                         <Menu.Item as='a'>Test 1</Menu.Item>
                         <Menu.Item as='a'>Test 2</Menu.Item>
@@ -33,11 +33,30 @@ class App extends Component<any, any> {
                     </Container>
                 </Menu>
                 <Container text style={{ marginTop: '7em' }}>
-                    <Header as='h1' style={{ color: '#fff' }}>Semantic UI React Fixed Template</Header>
-                    <p>This is a basic fixed menu template using fixed size containers.</p>
-                    <p>
-                        A text container is used for the main container, which is useful for single column layouts.
-                    </p>
+                    <Header as='h1' >Ecommerce widgets</Header>
+                    <List divided relaxed>
+                        <List.Item>
+                            <List.Icon name='github' size='large' verticalAlign='middle' />
+                            <List.Content>
+                                <List.Header as='a'>Semantic-Org/Semantic-UI</List.Header>
+                                <List.Description as='a'>Updated 10 mins ago</List.Description>
+                            </List.Content>
+                        </List.Item>
+                        <List.Item>
+                            <List.Icon name='github' size='large' verticalAlign='middle' />
+                            <List.Content>
+                                <List.Header as='a'>Semantic-Org/Semantic-UI-Docs</List.Header>
+                                <List.Description as='a'>Updated 22 mins ago</List.Description>
+                            </List.Content>
+                        </List.Item>
+                        <List.Item>
+                            <List.Icon name='github' size='large' verticalAlign='middle' />
+                            <List.Content>
+                                <List.Header as='a'>Semantic-Org/Semantic-UI-Meteor</List.Header>
+                                <List.Description as='a'>Updated 34 mins ago</List.Description>
+                            </List.Content>
+                        </List.Item>
+                    </List>
                 </Container>
             </React.Fragment>
         );
