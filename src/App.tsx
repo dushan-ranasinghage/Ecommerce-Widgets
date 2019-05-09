@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-
-import Layout from './containers/Layout';
-import TestCompo from './components/TestCompo';
-
 import {
   Container,
   Divider,
@@ -14,24 +10,20 @@ import {
   Menu,
   Segment,
 } from 'semantic-ui-react'
+
+import Layout from './containers/Layout';
+import TestCompo from './components/TestCompo';
+import Navbar from './components/Navbar'
+
 import img from './logo.svg'
+
 class App extends Component<any, any> {
     render() {
         return (
             <React.Fragment>
                 {/* <Layout />
                 <TestCompo name="Randika" /> */}
-                <Menu fixed='top' inverted style={{ backgroundColor: '#000', height:'45px', minHeight:'45px' }}>
-                    <Container>
-                        <Menu.Item as='a' header>
-                            <Image size='mini' src={img} style={{ marginRight: '1.5em' }} />
-                            Home
-                        </Menu.Item>
-                        <Menu.Item as='a'>Test 1</Menu.Item>
-                        <Menu.Item as='a'>Test 2</Menu.Item>
-                        <Menu.Item as='a'>Test 3</Menu.Item>
-                    </Container>
-                </Menu>
+                <Navbar image={img}/>
                 <Container text style={{ marginTop: '7em' }}>
                     <Header as='h1' >Ecommerce widgets</Header>
                     <List divided relaxed>
